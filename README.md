@@ -2,6 +2,8 @@
 
 ## Description
 
+The objective of the assignment is to create a working password generator. The display, along with the HTMl and CSS elements, have been already established, so it is my job to make the page functional. 
+
 ## User Story
 
 * **AS AN** employee with access to sensitive data
@@ -30,8 +32,12 @@
 
 ## Assignment Completion
 
+To make the function writePassword work, 
+
 ## Screenshot
 
 ## Link
 
 ## Credits
+
+Thank you to Natasha Mann, the tutor who supported me during this assignment. 

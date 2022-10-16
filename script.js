@@ -24,18 +24,20 @@ function generatePassword() {
 
   const possChar = [];
     if (isUppercase) {
-      possChar.push(uppercase);
+      possChar.conca(uppercase);
     }
     if (isLowercase) {
-      possChar.push(lowercase);
+      possChar.conca(lowercase);
     }
     if (isSpecial) {
-      possChar.push(special);
+      possChar.conca(special);
     }
     if (isNumbers) {
-      possChar.push(numbers);
+      possChar.concat(numbers);
     }
 
+  let newLength = possChar.length;
+  const randomIndex = math.floor(math.random() * newLength);
 
   const isUppercase = window.confirm("Would you like to include uppercase?");
   console.log(isUppercase);
@@ -57,9 +59,6 @@ function writePassword() {
 
   passwordText.value = password;
 
-  if (x >= 8 && x <= 128) {
-
-  }
 }
 
 // Add event listener to generate button
