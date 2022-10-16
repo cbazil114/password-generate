@@ -14,30 +14,16 @@ function generatePassword() {
 
   if (isNaN(length)) {
     window.alert("Not a number!");
-    return
+    return;
   }
 
   if (length < 8 || length > 128) {
     window.alert("Wrong size!");
-    return
+    return;
   }
 
-  const possChar = [];
-    if (isUppercase) {
-      possChar.conca(uppercase);
-    }
-    if (isLowercase) {
-      possChar.conca(lowercase);
-    }
-    if (isSpecial) {
-      possChar.conca(special);
-    }
-    if (isNumbers) {
-      possChar.concat(numbers);
-    }
-
-  let newLength = possChar.length;
-  const randomIndex = math.floor(math.random() * newLength);
+  // let newLength = possChar.length;
+  // const randomIndex = math.floor(math.random() * newLength);
 
   const isUppercase = window.confirm("Would you like to include uppercase?");
   console.log(isUppercase);
@@ -47,7 +33,21 @@ function generatePassword() {
   console.log(isSpecial);
   const isNumbers = window.confirm("Would you like to include numbers?");
   console.log(isNumbers);
-  return
+  return;
+
+  const possChar = [];
+  if (isUppercase) {
+    possChar.concat(uppercase);
+  }
+  if (isLowercase) {
+    possChar.concat(lowercase);
+  }
+  if (isSpecial) {
+    possChar.concat(special);
+  }
+  if (isNumbers) {
+    possChar.concast(numbers);
+  }
 }
 
 
