@@ -22,9 +22,6 @@ function generatePassword() {
     return;
   }
 
-  // let newLength = possChar.length;
-  // const randomIndex = math.floor(math.random() * newLength);
-
   const isUppercase = window.confirm("Would you like to include uppercase?");
   console.log(isUppercase);
   const isLowercase = window.confirm("Would you like to include lowercase?");
@@ -33,7 +30,6 @@ function generatePassword() {
   console.log(isSpecial);
   const isNumbers = window.confirm("Would you like to include numbers?");
   console.log(isNumbers);
-  return;
 
   const possChar = [];
   if (isUppercase) {
@@ -46,11 +42,16 @@ function generatePassword() {
     possChar.concat(special);
   }
   if (isNumbers) {
-    possChar.concast(numbers);
+    possChar.concat(numbers);
+  }
+
+  let numChar = possChar.length;
+  const randomIndex = Math.floor(Math.random() * numChar);
+
+  for (let i = 0; i <= numChar; i++) {
+    let userPassword = userPassword.concat(possChar[Math.floor(Math.random() * possChar.numChar)]);
   }
 }
-
-
 
 // Write password to the #password input
 function writePassword() {
