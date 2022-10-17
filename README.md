@@ -4,6 +4,8 @@
 
 The objective of the assignment is to create a working password generator. The display, along with the HTMl and CSS elements, have been already established, so it is my job to make the page functional. 
 
+No installation required. 
+
 ## User Story
 
 * **AS AN** employee with access to sensitive data
@@ -41,7 +43,7 @@ To make the function writePassword work, we need to fill out the password variab
 
 ## Screenshot
 
-
+The deployed application can be reached at: https://cbazil114.github.io/password-generate/
 
 ## Link
 
@@ -49,4 +51,4 @@ To make the function writePassword work, we need to fill out the password variab
 
 ## Credits
 
-Thank you to Natasha Mann, the tutor who supported me during this assignment. 
+Thank you to Natasha Mann, the tutor who supported me during this assignment, and the learning assistants who answered my other questions. 

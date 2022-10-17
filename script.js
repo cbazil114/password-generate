@@ -7,9 +7,11 @@ const uppercase =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-let userPassword = [];
 
 function generatePassword() {
+  
+  let userPassword = [];
+  
   const length = window.prompt("What is the length of the password you want?");
   console.log(length);
 
@@ -56,7 +58,7 @@ let possChar = [];
   }
 
   console.log(userPassword)
-  return userPassword;
+  return userPassword.join('');
 }
 
 // Write password to the #password input
