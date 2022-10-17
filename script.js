@@ -7,6 +7,7 @@ const uppercase =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+let userPassword = []
 
 function generatePassword() {
   const length = window.prompt("What is the length of the password you want?");
@@ -31,7 +32,7 @@ function generatePassword() {
   const isNumbers = window.confirm("Would you like to include numbers?");
   console.log(isNumbers);
 
-  const possChar = [];
+let possChar = [];
   if (isUppercase) {
     possChar.concat(uppercase);
   }
@@ -48,9 +49,10 @@ function generatePassword() {
   let numChar = possChar.length;
   const randomIndex = Math.floor(Math.random() * numChar);
 
-  for (let i = 0; i <= numChar; i++) {
-    let userPassword = userPassword.concat(possChar[Math.floor(Math.random() * possChar.numChar)]);
+  for (let i = 0; i <= numChar -1; i++) {
+    userPassword = userPassword.concat(possChar[Math.floor(Math.random() * possChar.numChar)]);
   }
+  console.log(userPassword)
 }
 
 // Write password to the #password input
