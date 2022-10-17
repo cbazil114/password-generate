@@ -43,7 +43,9 @@ To make the function writePassword work, we need to fill out the password variab
 
 ## Screenshot
 
+Here is the screenshot of the deployed webpage.
 
+![Password Generate Screenshot] (/Users/connorbazil/Desktop/password-generate/cbazil114.github.io_password-generate_.png)
 
 ## Link
 
