@@ -32,12 +32,20 @@ The objective of the assignment is to create a working password generator. The d
 
 ## Assignment Completion
 
-To make the function writePassword work, we need to fill out the password variable throiugh the generatePassword() function. There are a lot of conditions that need to be met.
-* 
+To make the function writePassword work, we need to fill out the password variable through the generatePassword() function. There are a lot of conditions that need to be met, all under the generatePassword() function.
+* I started with the prompts, since those will be what a user accesses to get the password they want. I use window.prompt for length, and use an if statemet to determine if the length matches the necessary criteria (between 8 and 128 characters)and that it is in numerical form. 
+* For the types of characters, I switch from prompt to confirm, since we need a boolean system to determine what to include and what not to. If a user clicks ok, it will include the characters within the designated array. 
+* Next, we need to ensure that the final array we pull from only contains the okay characters. We use an if statement under a new variable (possChar) to determine what will be included in the new array using the concat element. 
+* For the final section, we need to create a for loop that will repeatedly select a random character from the possChar array. I create 2 new variables - numChar (for the number of characters in the new array) and randomIndex (to generate a random character via the associated number in the array). Using the console.log, you can see that it is registering a random array of a certain length, but it still does not display on the page - only undefined. 
+* Lastly, you must make sure to return the final value of the generatePassword function. I could not get the random code to display until I remembered that I did not return the function. 
 
 ## Screenshot
 
+
+
 ## Link
+
+
 
 ## Credits
 

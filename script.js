@@ -10,7 +10,7 @@ var generateBtn = document.querySelector("#generate");
 let userPassword = [];
 
 function generatePassword() {
-  let length = window.prompt("What is the length of the password you want?");
+  const length = window.prompt("What is the length of the password you want?");
   console.log(length);
 
   if (isNaN(length)) {
@@ -54,7 +54,9 @@ let possChar = [];
   for (let i = 0; i <= length - 1; i++) {
     userPassword = userPassword.concat(possChar[Math.floor(Math.random() * numChar)]);
   }
+
   console.log(userPassword)
+  return userPassword;
 }
 
 // Write password to the #password input
