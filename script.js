@@ -7,10 +7,10 @@ const uppercase =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-let userPassword = []
+let userPassword = [];
 
 function generatePassword() {
-  const length = window.prompt("What is the length of the password you want?");
+  let length = window.prompt("What is the length of the password you want?");
   console.log(length);
 
   if (isNaN(length)) {
@@ -33,24 +33,26 @@ function generatePassword() {
   console.log(isNumbers);
 
 let possChar = [];
-  if (isUppercase) {
-    possChar.concat(uppercase);
-  }
-  if (isLowercase) {
-    possChar.concat(lowercase);
-  }
-  if (isSpecial) {
-    possChar.concat(special);
-  }
-  if (isNumbers) {
-    possChar.concat(numbers);
-  }
+
+    if (isUppercase) {
+      possChar = possChar.concat(uppercase);
+    }
+    if (isLowercase) {
+      possChar = possChar.concat(lowercase);
+    }
+    if (isSpecial) {
+      possChar = possChar.concat(special);
+    }
+    if (isNumbers) {
+      possChar = possChar.concat(numbers);
+    }
+    console.log(possChar, "possChar");
 
   let numChar = possChar.length;
   const randomIndex = Math.floor(Math.random() * numChar);
 
-  for (let i = 0; i <= numChar -1; i++) {
-    userPassword = userPassword.concat(possChar[Math.floor(Math.random() * possChar.numChar)]);
+  for (let i = 0; i <= length - 1; i++) {
+    userPassword = userPassword.concat(possChar[Math.floor(Math.random() * numChar)]);
   }
   console.log(userPassword)
 }

@@ -32,7 +32,8 @@ The objective of the assignment is to create a working password generator. The d
 
 ## Assignment Completion
 
-To make the function writePassword work, 
+To make the function writePassword work, we need to fill out the password variable throiugh the generatePassword() function. There are a lot of conditions that need to be met.
+* 
 
 ## Screenshot
 
