@@ -13,7 +13,12 @@ function generatePassword() {
   let userPassword = [];
   
   const length = window.prompt("What is the length of the password you want?");
+
   console.log(length);
+
+  if (!length) {
+    return
+  }
 
   if (isNaN(length)) {
     window.alert("Not a number!");

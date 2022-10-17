@@ -43,11 +43,11 @@ To make the function writePassword work, we need to fill out the password variab
 
 ## Screenshot
 
-The deployed application can be reached at: https://cbazil114.github.io/password-generate/
+
 
 ## Link
 
-
+The deployed application can be reached at: https://cbazil114.github.io/password-generate/
 
 ## Credits
 
