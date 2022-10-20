@@ -26,7 +26,7 @@ function generatePassword() {
   }
 
   if (length < 8 || length > 128) {
-    window.alert("Wrong size!");
+    window.alert("Passwords must be between 8 and 128 characters.");
     return;
   }
 
