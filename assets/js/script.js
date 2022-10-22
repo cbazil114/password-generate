@@ -52,11 +52,11 @@ let possChar = [];
     }
     console.log(possChar, "possChar");
 
-    // Added an if statement to return an alert if the user does not include any type of character
+    // Added an if statement to return an alert if the user does not include any type of character.
     if (isNumbers, isSpecial, isLowercase, isUppercase === false) {
       window.alert("Please select at least one type of character to include.");
 
-      return:
+      return;
     }
 
   let numChar = possChar.length;
@@ -69,13 +69,16 @@ let possChar = [];
   console.log(userPassword)
   return userPassword.join('');
 }
-
+// I added an if statement so that if the value returns as undefined, it would return to the original state and keep the placeholder.
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  if (password === undefined) {
+    return;
+  } else {
+    var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+  }
 }
 
 generateBtn.addEventListener("click", writePassword);
