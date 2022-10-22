@@ -1,11 +1,8 @@
-// Assignment code here
-
 const special = ['@','%','+','\\','/',"'",'!','#','$','^','?',':',',',')','(','}','{',']','[','~','-','_','.'];
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 const uppercase =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-// Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
@@ -55,6 +52,13 @@ let possChar = [];
     }
     console.log(possChar, "possChar");
 
+    // Added an if statement to return an alert if the user does not include any type of character
+    if (isNumbers, isSpecial, isLowercase, isUppercase === false) {
+      window.alert("Please select at least one type of character to include.");
+
+      return:
+    }
+
   let numChar = possChar.length;
   const randomIndex = Math.floor(Math.random() * numChar);
 
@@ -66,7 +70,6 @@ let possChar = [];
   return userPassword.join('');
 }
 
-// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -75,5 +78,4 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
