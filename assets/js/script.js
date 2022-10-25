@@ -8,8 +8,8 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   
   let userPassword = [];
-  
-  const length = window.prompt("What is the length of the password you want?");
+  // Edited prompt to mentions the parameters of 8 and 128 characters
+  const length = window.prompt("What is the length of the password you want(Between 8 and 128 characters)?");
 
   console.log(length);
 
@@ -53,7 +53,8 @@ let possChar = [];
     console.log(possChar, "possChar");
 
     // Added an if statement to return an alert if the user does not include any type of character.
-    if (isNumbers, isSpecial, isLowercase, isUppercase === false) {
+    // Changed , to &&; resolved the issue whenever something other than isUppercase is selected
+    if (isNumbers && isSpecial && isLowercase && isUppercase === false) {
       window.alert("Please select at least one type of character to include.");
 
       return;
